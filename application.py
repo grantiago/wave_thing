@@ -250,4 +250,11 @@ def api_docs():
 api.add_resource(BuoyTalkResource, '/api/buoytalk/<buoy_id>/<buoy_data_type>')
 
 if __name__ == '__main__':
-    application.run(debug=True)
+# connection refused on local network
+# added ga from stack overflow flask refuses to connect
+# https://stackoverflow.com/questions/30554702
+
+    application.run(host='0.0.0.0',debug=True)
+#    application.run(debug=True)
+
+
