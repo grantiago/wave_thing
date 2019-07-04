@@ -24,7 +24,7 @@ The access to WAVE_THING is through HTTP. It uses the [Flask](http://flask.pocoo
 
 ### To run:
 ```
-pip install -r requirments.txt
+pip install -r requirements.txt
 python application.py
 ```
 
